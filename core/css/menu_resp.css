@@ -1,0 +1,241 @@
+/*PADRÃO*/
+
+.toggle, [id^=drop] {
+	display: none;
+}
+nav {
+    background-color: #F94144;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+    height: 90px;
+	display: block;
+	
+}
+
+nav label {
+	content: "";
+}
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a {
+	display: block;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+}
+
+
+/*MENU*/
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+nav ul li {
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+	position: relative;
+	transition: 0.3s;
+	padding: 2%;
+}
+
+nav ul li:hover a{
+	color: #f07f3c;
+}
+
+/*SUBMENU*/
+
+nav ul li ul {
+	
+	position: absolute;
+	z-index: 99999999;
+	left: -280px;
+	margin-top: 15px;
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+nav ul li ul li {
+	width: 300px;
+	float: none;
+	display: list-item;
+	background: #f1f1f1;
+	padding: 0;
+	border-bottom: 1px solid #dadad9;
+	text-align: left;
+}
+
+nav ul li ul li:hover {
+	background: #dadad9;
+	border: none;
+	border-bottom: 1px solid #dadad9;
+}
+
+nav ul li ul li a {
+	color: #f07f3c;
+	padding: 10px 20px;
+	font-size: 16px
+}
+
+nav ul li ul li:hover a {
+	font-weight: bold;
+}
+
+/*MENU TERCEIRO NIVEL*/
+
+nav ul li ul li ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+nav ul li ul li ul li {
+	background: #dadad9;
+	text-align: left;
+}
+
+nav ul li ul li ul li:hover a {
+	font-weight: bold;
+}
+
+/*MENU QUARTO NIVEL*/
+
+nav ul li ul li ul li ul {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 9999999;
+}
+
+nav ul li ul li ul li ul {
+	background: #dadad9;
+	text-align: left;
+}
+
+nav ul li ul li ul li:hover a {
+	font-weight: bold;
+}
+@media screen and (max-width: 1100px) {
+	
+	[id^=drop]:checked+ul {
+		display: block;
+	}
+	.barras {
+		float: right;
+		margin-right: 5%;
+		cursor: pointer;
+		margin-top: -100px;
+	}
+	.barras:hover {
+		background: none
+	}
+	.barras i {
+		font-size: 30px;
+		color: #f07f3c;
+		float: right;
+		right: 0;
+		margin-right: 5%;
+	}
+	#tp_gruta .barras i {
+		color: #fff;
+		margin-right: 7%;
+	}
+	
+	.toggle+a, .menu_resp {
+		
+	}
+	.toggle {
+		display: block;
+		color: #999;
+		font-size: 14px;
+		text-decoration: none;
+		border: none;
+	}
+	.toggle a:hover {
+		color: #f07f3c;
+	}
+	label.submenu {
+		margin: 0;
+		padding: 0;
+	}
+	;
+	/*MENU*/
+	nav {
+		margin: 15px 0;
+		border-radius: 0;
+	}
+	nav a {
+		padding: 14px 20px;
+		color: #f07f3c;
+	}
+	nav ul li {
+		display: block;
+		background: #fff;
+		width: 100%;
+		border-radius: 0;
+		padding: 0;
+		border-bottom: 1px solid #f07f3c;
+		text-align: left;
+	}
+
+	/*SUBMENU*/
+	nav ul li ul {
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: 0;
+		margin: 0 auto;
+	}
+	nav ul li ul li {
+		width: 100%;
+		display: block;
+	}
+	nav ul li ul li .toggle {
+		background-color: #d1d1d1;
+	}
+
+	nav ul li ul li:hover {
+		background: #CCC;
+	}
+
+	nav ul li ul li:hover .toggle {
+		background: #CCC;
+	}
+	/*MENU TERCEIRO NIVEL*/
+	nav ul li ul li ul {
+		position: relative;
+		width: 100%;
+		left: 0;
+	}
+	nav ul li ul li ul li {
+		background: #77787B;
+	}
+	nav ul li ul li ul li a {
+		color: #FFF;
+		font-size: 14px;
+	}
+	nav ul li ul li ul li:hover a {
+		background-color: #472E09;
+		color: #FFF;
+	}
+	nav ul ul li:hover>ul, nav ul li:hover>ul {
+		display: none;
+	}
+}
