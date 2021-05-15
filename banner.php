@@ -1,3 +1,3 @@
 <div class = "banner">
-    <img src="core/imagens/banner.png" alt="">
+    <img class = "imagem" src="core/imagens/banner.png" alt="">
 </div>

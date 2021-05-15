@@ -12,7 +12,7 @@
 <base href="http://<?php echo $_SERVER['HTTP_HOST'];?>/iline/" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0">
 <meta name="author" content="MogiComp">
 	<meta http-equiv="Content-Language" content="pt-br">
 

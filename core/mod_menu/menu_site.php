@@ -1,8 +1,7 @@
 <link rel="stylesheet" type="text/css" href="core/css/menu_resp.css">
-<nav>
-    <ul class="menu_resp">
+    <div class = "posimenu">
             <div class="logo">
-               <img src="core/imagens/logo.png" alt="">
+               <img src="core/imagens/logo.png" alt="" style= "margin-left: 24px">
               <span class ="txtlogo"> I-Line </span>
             </div>
             <div class="navigation">
@@ -12,6 +11,6 @@
                         </button>
                     </div>
             </div>
-    </ul>
-</nav>
+    </div>
+
  
