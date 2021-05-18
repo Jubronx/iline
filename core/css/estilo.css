@@ -390,4 +390,41 @@ width: 281px;
   color: #BA3033;
   font-weight: 500;
 }
+.laranja {
+  color: #F94144;
+}
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #C4C4C4;
+  color: white;
+}
+.categoria {
+  display: table; 
+  float: left; 
+  padding: 0 30px;
+  width: 150px;
+  height: 250px;
+}
+.categoria > div {
+  width: 90%;
+}
+.fundo-categoria {
+  background-color: #F94144; 
+  width: 170px; 
+  height: 75px; 
+  border-radius: 10px;
+  position: absolute; 
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.categoria img {
+  position: relative;
+}
+.categoria p {
+  text-align: center;
+}
+.centralizado {
+  text-align: center;
+}
 /*#endregion*/
